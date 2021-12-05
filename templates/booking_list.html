@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Home page -->
+        <div class="col-12 mt-4 left">
+            <div class="row">
+                <div class="col-md-4">
+                   <div>
+                       <h2>My bookings</h2>
+
+                       <!-- <p><span>{{book.first_name}}</span> <span>{{book.number_of_guests}}</span> <span>{{book.date_and_time}}</span></p> -->
+                       <table class="table">
+                        <!-- {% for book in bookings %} -->
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Number of guests</th>
+                            <th scope="col">Date and Time</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                            {% for book in bookings %}
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>{{book.first_name}}</td>
+                            <td>{{book.number_of_guests}}</td>
+                            <td>{{book.date_and_time}}</td>
+                          </tr>
+                          {% endfor %}
+                          <!-- <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr> -->
+
+                        </tbody>
+                        <!-- {% endfor %} -->
+                      </table>
+
+                   </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{%endblock%}
+
