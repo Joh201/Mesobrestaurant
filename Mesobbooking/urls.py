@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from mesob.views import home, booking_view
+from mesob.views import home, booking_view, book
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
-    path('booklist/', booking_view, name ='book'),
+    path('booklist/', booking_view, name ='booklist'),
+    path('booking', book, name ='book'),
 ]

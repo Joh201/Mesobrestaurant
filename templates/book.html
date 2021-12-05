@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Home page -->
+        <div class="col-12 mt-4 left">
+            <div class="row">
+                <div class="col-md-4">
+                   <div>
+                       <h2>Make a booking below:</h2>
+                    <form method="POST" action="booking">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+
+                         <div>
+                            <p>
+                                <button type="submit" class="btn btn-primary">Add a booking</button>
+                            </p>
+                        </div>
+                    </form>
+                   </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{%endblock%}

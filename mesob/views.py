@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Book
+from .forms import BookForm
 
 # Create your views here.
 
@@ -13,6 +14,21 @@ def booking_view(request):
         'bookings': bookings
     }
     return render(request, 'booking_list.html', context)
+
+
+def book(request):
+    if request.method == 'POST':
+        form = BookForm(request.POST)
+        if form.is_valid():
+            form.save()
+
+        return redirect('booklist')
+    form = BookForm()
+    context = {
+        'form': form
+    }
+
+    return render(request, 'book.html', context)
 
 
 
