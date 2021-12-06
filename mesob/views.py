@@ -16,7 +16,7 @@ def booking_view(request):
     return render(request, 'booking_list.html', context)
 
 
-def book(request):
+def create_book(request):
     if request.method == 'POST':
         form = BookForm(request.POST)
         if form.is_valid():
@@ -43,6 +43,12 @@ def update_book(request, book_id):
         'form': form
     }
     return render(request, 'updatebook.html', context)
+
+
+def cancel_book(request, book_id):
+    book = get_object_or_404(Book, id=book_id)
+    book.delete()
+    return redirect('booklist')
 
 
 
