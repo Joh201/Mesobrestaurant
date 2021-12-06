@@ -31,5 +31,19 @@ def book(request):
     return render(request, 'book.html', context)
 
 
+def update_book(request, book_id):
+    book = get_object_or_404(Book, id=book_id)
+    if request.method == 'POST':
+        form = BookForm(request.POST, instance=book)
+        if form.is_valid():
+            form.save()
+        return redirect('booklist')
+    form = BookForm(instance=book)
+    context = {
+        'form': form
+    }
+    return render(request, 'updatebook.html', context)
+
+
 
 
