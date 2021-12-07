@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, reverse
+from django.contrib import messages
+from django.http import HttpResponseRedirect
 from .models import Book
 from .forms import BookForm
 
@@ -20,7 +22,12 @@ def create_book(request):
     if request.method == 'POST':
         form = BookForm(request.POST)
         if form.is_valid():
-            form.save()
+            form_date_time = form.cleaned_data['date_and_time']
+            if Book.objects.filter(date_and_time=form_date_time).exists():
+                messages.success(request, 'Please book another time')
+                return HttpResponseRedirect(reverse('book'))
+            else:
+                form.save()
 
         return redirect('booklist')
     form = BookForm()

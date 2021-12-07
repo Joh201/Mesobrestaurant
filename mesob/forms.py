@@ -12,4 +12,3 @@ class BookForm(forms.ModelForm):
         fields = ['first_name', 'last_name', 'email', 'number_of_guests', 'date_and_time' ]
 
 
-# check_in = DateTimeField(required=True, input_formats=["%Y-%m-%dT%H:%M", ])
