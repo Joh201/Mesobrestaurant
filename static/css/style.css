@@ -21,13 +21,21 @@ body {
     background-color:white;
 } */
 
-.navbar-nav{
+/* .navbar-nav{
     margin-right: 300px;
-}
+} */
 
 .navbg{
     background-color:burlywood;
     font-weight: 600;
+}
+
+.welcome{
+    margin-top: 200px;
+}
+
+.log-regist{
+    color: darkgoldenrod;
 }
 
 /* .navlin:hover{

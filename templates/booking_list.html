@@ -5,17 +5,23 @@
 <div class="container-fluid">
     <div class="row">
 
-        <!-- Home page -->
-        <div class="col-12 mt-4 left">
+        <!-- Booking-list page -->
+        <div class="col-12 mt-4 text-center">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 mt-4">
                    <div>
                        <h2>My bookings</h2>
                    </div>
-
+                   <!-- col-md-12 mt-4 text-center -->
                    <!-- {{bookings}} -->
 
                    <table class="table">
+
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Guests</th>
+                      <th scope="col">Date</th>
+                    </tr>
 
                     {% for book in bookings %}
                     <tr>
@@ -27,14 +33,14 @@
                         <td> {{ book.date_and_time}}</td>
 
                         <td>
-                          <a class="btn btn-primary" href="/update/{{book.id}}" role="button">Update booking</a>
+                          <a class="btn btn-primary" href="/update/{{book.id}}" role="button">Update</a>
                             <!-- <a href="#">
                                 <button type="button" class="btn btn-primary"> Update booking</button>
                             </a> -->
                         </td>
 
                         <td>
-                          <a class="btn btn-primary" href="/cancel/{{book.id}}" role="button">Cancel booking</a>
+                          <a class="btn btn-primary" href="/cancel/{{book.id}}" role="button">Cancel</a>
                             <!-- <a href="#">
                                 <button type="button" class="btn btn-primary"> Cancel booking</button>
                             </a> -->
