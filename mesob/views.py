@@ -22,8 +22,8 @@ def create_book(request):
     if request.method == 'POST':
         form = BookForm(request.POST)
         if form.is_valid():
-            form_date_time = form.cleaned_data['date_and_time']
-            if Book.objects.filter(date_and_time=form_date_time).exists():
+            date_and_time = form.cleaned_data['date_and_time']
+            if Book.objects.filter(date_and_time=date_and_time).exists():
                 messages.success(request, 'Please book another time')
                 return HttpResponseRedirect(reverse('book'))
             else:
@@ -60,3 +60,4 @@ def cancel_book(request, book_id):
 
 
 
+# form_date_time

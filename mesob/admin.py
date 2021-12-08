@@ -5,6 +5,6 @@ from .models import Book
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    list_displaly = ('first_name', 'last_name','number_of_guests', 'date_and_time', 'email')
+    list_displaly = ('first_name', 'last_name', 'email', 'number_of_guests', 'date_and_time')
 
 
