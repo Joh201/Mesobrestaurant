@@ -12,41 +12,42 @@
                    <div>
                        <h2>My bookings</h2>
                    </div>
-                   <!-- col-md-12 mt-4 text-center -->
-                   <!-- {{bookings}} -->
 
                    <table class="table">
-
+                    <thead>
                     <tr>
                       <th scope="col">Name</th>
                       <th scope="col">Guests</th>
                       <th scope="col">Date</th>
                     </tr>
+                  </thead>
 
                     {% for book in bookings %}
                     <tr>
 
-                        <td> {{ book.first_name}} </td>
+                        <td><strong> {{ book.first_name}}</strong></td>
 
                         <td> {{ book.number_of_guests}}</td>
 
                         <td> {{ book.date_and_time}}</td>
 
-                        <td>
-                          <a class="btn btn-primary" href="/update/{{book.id}}" role="button">Update</a>
-                            <!-- <a href="#">
-                                <button type="button" class="btn btn-primary"> Update booking</button>
-                            </a> -->
-                        </td>
+                        <tr>
+                            <td>
+                                <a class="btn btn-primary" href="/update/{{book.id}}" role="button">Update</a>
+                                  <!-- <a href="#">
+                                      <button type="button" class="btn btn-primary"> Update booking</button>
+                                  </a> -->
+                              </td>
 
-                        <td>
-                          <a class="btn btn-primary" href="/cancel/{{book.id}}" role="button">Cancel</a>
-                            <!-- <a href="#">
-                                <button type="button" class="btn btn-primary"> Cancel booking</button>
-                            </a> -->
-                        </td>
+                              <td>
+                                <a class="btn btn-primary" href="/cancel/{{book.id}}" role="button">Cancel</a>
+                                  <!-- <a href="#">
+                                      <button type="button" class="btn btn-primary"> Cancel booking</button>
+                                  </a> -->
+                              </td>
+                        </tr>
 
-                      </tr>
+                    </tr>
 
                         {% empty %}
                         <tr>
@@ -68,4 +69,3 @@
 </div>
 
 {%endblock%}
-<!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
