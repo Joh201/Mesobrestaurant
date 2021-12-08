@@ -42,7 +42,7 @@ body {
 
 .table{
     margin-top: 50px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .table thead tr th, .table tbody tr td {
@@ -84,7 +84,7 @@ body {
     text-transform: uppercase;
 } */
 
-.masthead {
+/* .masthead {
     margin-top: 10px;
     overflow: hidden;
     position: relative;
@@ -116,7 +116,7 @@ body {
     -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
-}
+} */
 
 /* .post-link {
     text-decoration: none;
@@ -139,24 +139,24 @@ body {
 } */
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color:coral;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+    background-color:#23BBBB;
+    color: whitesmoke;
 }
 
 .link {
-    color: #23BBBB;
+    color:coral;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color:#23BBBB;
     text-decoration: underline;
 }
 
