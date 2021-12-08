@@ -14,18 +14,31 @@ body {
 }
 
 .thin {
-    font-weight: 300;
+    font-weight: 700;
 }
 
-.light-bg {
-    background-color: #fff;
+/* .light-bg {
+    background-color:white;
+} */
+
+.navbar-nav{
+    margin-right: 300px;
 }
 
-.dark-bg {
+.navbg{
+    background-color:burlywood;
+    font-weight: 600;
+}
+
+/* .navlin:hover{
+    color:crimson;
+} */
+
+/* .dark-bg {
     background-color: #445261;
-}
+} */
 
-.main-bg {
+/* .main-bg {
     background-color: #F9FAFC;
 }
 
@@ -50,7 +63,7 @@ body {
     color: white;
     margin: 4px;
     text-transform: uppercase;
-}
+} */
 
 .masthead {
     margin-top: 10px;
@@ -86,7 +99,7 @@ body {
     z-index: 100;
 }
 
-.post-link {
+/* .post-link {
     text-decoration: none;
     color: #445261;
 }
@@ -104,7 +117,7 @@ body {
 .post-subtitle {
     margin-left: 5%;
     color: lightgray;
-}
+} */
 
 .btn-signup {
     background-color: #23BBBB;
@@ -128,7 +141,7 @@ body {
     text-decoration: underline;
 }
 
-.btn-like {
+/* .btn-like {
     color: #E84610;
     border: none;
     background: transparent;
@@ -139,4 +152,4 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
-}
+} */
