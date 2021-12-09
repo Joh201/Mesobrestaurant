@@ -57,7 +57,3 @@ def cancel_book(request, book_id):
     book.delete()
     return redirect('booklist')
 
-
-
-
-# form_date_time
