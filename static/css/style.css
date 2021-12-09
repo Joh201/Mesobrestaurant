@@ -1,6 +1,25 @@
 body {
-    background-color: #F9FAFC;
+    background: #F9FAFC;
+    background-image: url('/static/images/mesob.jpg');
+    /* background-position: center; */
+    /* background-repeat:repeat;
+    background-size: co; */
 }
+
+/* For screens  with 375px and down */
+@media screen and (max-width:414px) {
+
+    /* background-image */
+    body {
+        background: #F9FAFC;
+        background-image: url('/static/images/mesob.jpg');
+        background-position: center;
+        background-repeat:no-repeat;
+        /* background-size:cover; */
+    }
+}
+
+
 
 .brand {
     font-family: Lato, sans-serif;
@@ -38,6 +57,12 @@ body {
     color: darkgoldenrod;
 }
 
+#msg{
+
+    color:darkcyan;
+
+}
+
 /* bookinglist-page */
 
 .table{
@@ -49,6 +74,11 @@ body {
     border: none;
 }
 
+
+ /* .main-bg{
+    background-color: #F9FAFC;
+} */
+
 /* .navlin:hover{
     color:crimson;
 } */
@@ -57,9 +87,6 @@ body {
     background-color: #445261;
 } */
 
-/* .main-bg {
-    background-color: #F9FAFC;
-}
 
 .card {
     border: none;
@@ -78,11 +105,11 @@ body {
     background-color: #23BBBB;
 }
 
-.author {
+/* .author {
     color: white;
     margin: 4px;
     text-transform: uppercase;
-} */
+}  */
 
 /* .masthead {
     margin-top: 10px;

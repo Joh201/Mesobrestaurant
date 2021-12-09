@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<body style="background: #F9FAFC;"></body>
 <div class="container-fluid">
     <div class="row">
 
@@ -10,7 +11,7 @@
             <div class="row">
                 <div class="col-md-4">
                    <div>
-                       <h2>Update a booking below:</h2>
+                       <h2>Update a booking below:</h2><br>
                     <form method="POST">
                         {% csrf_token %}
                         {{ form.as_p }}
