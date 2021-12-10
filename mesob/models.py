@@ -4,6 +4,7 @@ from django.utils import timezone
 
 # Create your models here.
 class Book(models.Model):
+    ''' The booking model '''
     first_name = models.CharField(max_length=20, null=False, blank=False)
     last_name = models.CharField(max_length=20, null=False, blank=False)
     email = models.EmailField(null=False, blank=False)
