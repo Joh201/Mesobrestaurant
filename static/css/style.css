@@ -1,9 +1,6 @@
 body {
     background: #F9FAFC;
     background-image: url('/static/images/mesob.jpg');
-    /* background-position: center; */
-    /* background-repeat:repeat;
-    background-size: co; */
 }
 
 .brand {
@@ -13,99 +10,71 @@ body {
     color: #4A4A4F;
 }
 
-.red-o {
+.red-e {
     color: #E84610;
 }
 
-.thin {
-    font-weight: 700;
+.green-o {
+    color: green;
 }
 
-/* .light-bg {
-    background-color:white;
-} */
 
-/* .navbar-nav{
-    margin-right: 300px;
-} */
-
-.navbg{
-    background-color:burlywood;
+.navbg {
+    background-color: burlywood;
     font-weight: 600;
 }
 
-.welcome{
+.welcome {
+    color: #23BBBB;
     margin-top: 100px;
-    color:#23BBBB;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
-.log-regist{
-    color:whitesmoke;
+.log-regist {
+    color: whitesmoke;
 }
 
-#msg{
-    color:darkcyan;
-
+#msg {
+    color: darkcyan;
 }
 
-/* bookinglist-page */
-
-.table{
+.table {
     margin-top: 50px;
-    /* text-align: center; */
 }
 
-.table thead tr th, .table tbody tr td {
+.table thead tr th,
+.table tbody tr td {
     border: none;
 }
 
-.book{
+.book {
     margin-top: 25px;
 }
 
-.update{
+.update {
     margin-top: 25px;
 }
 
-
- /* .main-bg{
-    background-color: #F9FAFC;
-} */
-
-/* .navlin:hover{
-    color:crimson;
-} */
-
-/* .dark-bg {
-    background-color: #445261;
-} */
-
-
-.card {
-    border: none;
-    background-color: transparent;
-}
 
 .btn-signup {
-    background-color:coral;
+    background-color: coral;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color:#23BBBB;
+    background-color: #23BBBB;
     color: whitesmoke;
 }
 
 .link {
-    color:coral;
+    color: coral;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color:#23BBBB;
+    color: #23BBBB;
     text-decoration: underline;
 }
 
@@ -117,13 +86,12 @@ body {
         background: #F9FAFC;
         background-image: url('/static/images/mesob.jpg');
         background-position: center;
-        background-repeat:no-repeat;
-        /* background-size:cover; */
+        background-repeat: no-repeat;
     }
 
-    .welcome{
-        margin-top:30px;
-        color:blue;
+    .welcome {
+        margin-top: 30px;
+        color: blue;
         font-weight: 800;
     }
 }

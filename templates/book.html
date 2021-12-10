@@ -1,27 +1,27 @@
 {% extends "base.html" %}
 
+
 {% block content %}
+<!-- Booking page -->
 <body style="background: #F9FAFC;"></body>
 <div class="container-fluid">
     <div class="row">
-
-        <!-- Booking page -->
         <div class="col-12 mt-4 left">
             <div class="row justify-content-center book">
                 <div class="col-md-4">
-                   <div>
-                       <h2>Make a booking below:</h2><br>
-                    <form method="POST" action="booking">
-                        {% csrf_token %}
-                        {{ form.as_p }}
+                    <div>
+                        <h2>Make a booking below:</h2><br>
+                        <form method="POST" action="booking">
+                            {% csrf_token %}
+                            {{ form.as_p }}
 
-                         <div>
-                            <p>
-                                <button type="submit" class="btn btn-primary">Add a booking</button>
-                            </p>
-                        </div>
-                    </form>
-                   </div>
+                            <div>
+                                <p>
+                                    <button type="submit" class="btn btn-primary">Add a booking</button>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
 

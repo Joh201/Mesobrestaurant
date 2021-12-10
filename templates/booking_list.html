@@ -1,67 +1,64 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+<!-- Booking-list page -->
+
 <body style="background: #F9FAFC;"></body>
 
 <div class="container-fluid">
     <div class="row">
-
-        <!-- Booking-list page -->
         <div class="col-12 mt-4 text-center">
             <div class="row justify-content-center">
                 <div class="col-md-6 mt-4">
-                   <div>
-                       <h2>My bookings</h2>
-                   </div>
+                    <div>
+                        <h2>My bookings</h2>
+                    </div>
 
-                   <table class="table">
-                    <thead>
-                    <tr>
-                      <th scope="col">Name</th>
-                      <th scope="col">Guests</th>
-                      <th scope="col">Date</th>
-                    </tr>
-                  </thead>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Guests</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
 
-                    {% for book in bookings %}
-                    <tr>
+                        {% for book in bookings %}
+                        <tr>
 
-                        <td><strong> {{ book.first_name}}</strong></td>
+                            <td><strong> {{ book.first_name}}</strong></td>
 
-                        <td> {{ book.number_of_guests}}</td>
+                            <td> {{ book.number_of_guests}}</td>
 
-                        <td> {{ book.date_and_time}}</td>
+                            <td> {{ book.date_and_time}}</td>
 
                         <tr>
                             <td>
                                 <a class="btn btn-primary" href="/update/{{book.id}}" role="button">Update</a>
-                                  <!-- <a href="#">
-                                      <button type="button" class="btn btn-primary"> Update booking</button>
-                                  </a> -->
-                              </td>
 
-                              <td>
+                            </td>
+
+                            <td>
                                 <a class="btn btn-primary" href="/cancel/{{book.id}}" role="button">Cancel</a>
-                                  <!-- <a href="#">
-                                      <button type="button" class="btn btn-primary"> Cancel booking</button>
-                                  </a> -->
-                              </td>
+
+                            </td>
                         </tr>
 
-                    </tr>
+                        </tr>
 
                         {% empty %}
                         <tr>
                             <td> You have no bookings</td>
                         </tr>
 
-                      {% endfor %}
+                        {% endfor %}
 
                     </table>
-                      <a href="/booking">
-                                <button type="button" class="btn btn-primary">Book</button>
-                      </a>
-                    <!-- <a href="#">Book</a> -->
+                    <a href="/booking">
+                        <button type="button" class="btn btn-primary">Book</button>
+                    </a>
+
                 </div>
             </div>
 

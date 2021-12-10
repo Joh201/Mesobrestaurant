@@ -1,5 +1,6 @@
 {% load static %}
 
+<!-- This page was adopted from course material and modified to fit the project -->
 <!DOCTYPE html>
 <html class="h-100">
 
@@ -26,8 +27,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light navbg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">M<span class="red-o">e</span>sob<span
-                        class="thin"></span></span></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">M<span class="red-e">e</span>s<span
+                        class="green-o">o</span>b</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,18 +36,18 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarText">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active navlin" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link navlin" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link navlin" href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link navlin" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -77,11 +78,19 @@
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 navbg">
-        <p class="mb-1 text-center text-black"><span>Address: Robyvegen 61 A, 754 30 Uppsala</span><br><span>Opening hours: Monday-Saturday: 12-22</span><br><span>Tele: 018-20 77 78</span><br><span> info@mesob.se</span></p>
-        <p class="m-0 text-center text-black">Follow us: <a href="https://www.facebook.com/restaurangmessob/" target="_blank" aria-label="Visit our Facebook page(opends in a new tab)" rel="noopener"><i class="fab fa-facebook-square ms-3"></i></a>
-            <a href="https://www.instagram.com/restaurangmessob/" target="_blank" aria-label="Visit our Instagram page(opends in a new tab)" rel="noopener"><i class="fab fa-instagram ms-3"></i></a>
-            <a href="https://www.youtube.com/results?search_query=mesob+ethiopian+restaurant" target="_blank" aria-label="Visit our Youtube page(opends in a new tab)" rel="noopener"><i class="fab fa-youtube-square ms-3"></i></a>
-            </p>
+        <p class="mb-1 text-center text-black"><span>Address: Robyvegen 61 A, 754 30 Uppsala</span><br><span>Opening
+                hours: Monday-Saturday: 12-22</span><br><span>Tele: 018-20 77 78</span><br><span> info@mesob.se</span>
+        </p>
+        <p class="m-0 text-center text-black">Follow us: <a href="https://www.facebook.com/restaurangmessob/"
+                target="_blank" aria-label="Visit our Facebook page(opends in a new tab)" rel="noopener"><i
+                    class="fab fa-facebook-square ms-3"></i></a>
+            <a href="https://www.instagram.com/restaurangmessob/" target="_blank"
+                aria-label="Visit our Instagram page(opends in a new tab)" rel="noopener"><i
+                    class="fab fa-instagram ms-3"></i></a>
+            <a href="https://www.youtube.com/results?search_query=mesob+ethiopian+restaurant" target="_blank"
+                aria-label="Visit our Youtube page(opends in a new tab)" rel="noopener"><i
+                    class="fab fa-youtube-square ms-3"></i></a>
+        </p>
 
     </footer>
     <script>
@@ -94,5 +103,3 @@
 </body>
 
 </html>
-
-

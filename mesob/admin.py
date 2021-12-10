@@ -6,8 +6,7 @@ from .models import Book
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    # list_displaly = ('first_name', 'email', 'number_of_guests',
-    #                  'date_and_time')
+    # list_displaly = ('last_name', 'email', 'number_of_guests')
     list_filter = ('first_name', 'date_and_time')
     search_fields = ['first_name', 'number_of_guests']
 
