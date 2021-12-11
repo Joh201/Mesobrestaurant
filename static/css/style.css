@@ -1,7 +1,10 @@
 body {
-    background-image: url('../images/mesob.jpg');
+    background-image: url('https://res.cloudinary.com/dwdg2qctz/image/upload/v1639237487/static/images/mesob_c6qurr.jpg');
     background-color: #F9FAFC;
 }
+
+/* ../images/mesob.jpg */
+
 
 .brand {
     font-family: Lato, sans-serif;
