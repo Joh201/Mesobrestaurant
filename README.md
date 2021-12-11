@@ -33,8 +33,21 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 * The username and password fields are required for the user to sign up.
 * The user is also required to fill the password twice, and if it does not match the user gets appropriate information.
 * At the top of the sign up form there is also a link for sign in if the user has ended up in the page by mistake, this helps the user to go to the login page directly without leaving the page.
+* The sign up form contains a sign up button which the user uses to submit the form
 
 ![Sign up page](/static/readmefiles/signuppage.PNG)
+
+
+### Login page
+
+* This page contains a sign in form which allows users to login to their accounts inorder to make a booking at the restaurant.
+* The user logs in  by providing username and password.
+* The username and password fields are required for the user to sign in.
+* If the user makes a mistake while signing in, the user gets a feed back that the username or password is incorrect.
+* At the top of the sign in form there is also a link for sign up page if the user has ended up in the page by mistake, upon clicking the link the user gets redirected to the register page.
+* At the bottom of the sign in form there is a sign in button which enables the user to login.
+
+![Login page](/static/readmefiles/signin.PNG)
 
 
 
