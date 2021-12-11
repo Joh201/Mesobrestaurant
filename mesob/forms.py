@@ -16,5 +16,7 @@ class BookForm(forms.ModelForm):
     class Meta:
         '''Specifiying model fields'''
         model = Book
-        fields = ['first_name', 'last_name', 'email', 'number_of_guests',
-                  'date_and_time']
+        #fields = ['first_name', 'last_name', 'email', 'number_of_guests',
+        #         'date_and_time']
+        exclude = ['username']
+

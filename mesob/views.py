@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from django.contrib.auth.models import User
 from .models import Book
 from .forms import BookForm
 
@@ -11,20 +12,40 @@ def home(request):
     ''' Renders the home page'''
     return render(request, 'index.html')
 
+def username(username):
+    if User.objects.filter(username=username).exists():
+        return True
+
+    else:
+        return False
+
 
 def booking_view(request):
     ''' Renders the booking list page'''
-
-    bookings = Book.objects.all().order_by('date_and_time')
+    bookings = Book.objects.all().order_by('date_and_time').filter(username=request.user)
+    # print(bookings)
     context = {
         'bookings': bookings
     }
+
+    # if username(username):
+    #     # bookings = User.objects.all().bookings
+    #     print(request.user)
+    #     bookings = Book.objects.all().order_by('date_and_time')
+    #     context = {
+    #                 'bookings': bookings
+    #             }
+
+    # else:
+    #     context = {
+    #             'bookings': ''
+    #         }
+
     return render(request, 'booking_list.html', context)
 
 
 def create_book(request):
     ''' Renders the booking page'''
-
     if request.method == 'POST':
         form = BookForm(request.POST)
         if form.is_valid():
@@ -34,7 +55,9 @@ def create_book(request):
                 messages.success(request, 'Please book another time')
                 return HttpResponseRedirect(reverse('book'))
             else:
-                form.save()
+                update = form.save(commit=False)
+                update.username = request.user
+                update.save()
 
         return redirect('booklist')
     form = BookForm()
