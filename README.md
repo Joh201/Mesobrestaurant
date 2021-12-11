@@ -14,16 +14,27 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 ### Home page
 
 * The home page welcomes the user to the website.
-* Its informs the user to register or login to dine at Mesob restaurant.
-* It also provides the customer with information about the address, contact details, social media links and working hours of the restaurant.
+* It informs the user to register or login to dine at Mesob restaurant.
+* The footer of the home page provides the customer with information about the address, contact details,
+  social media links and working hours of the restaurant.
 
-![Home page](/static/readmefiles/Homepage.PNG)
+![Home page](/static/readmefiles/homepage.PNG)
 
 ### The logo
 * The logo of the restaurant is located at the top left corner of the home page.
 * The logo 'Mesob' is infact the name of the food container in the background image of the home page.
 
 ![Logo](/static/readmefiles/logo.PNG)
+
+### Register page
+
+* This page contains a sign up form which allows the user to register inorder to book at Mesob restaurant.
+* The user signs up by providing username, email(optional) and password.
+* The username and password fields are required for the user to sign up.
+* The user is also required to fill the password twice, and if it does not match the user gets appropriate information.
+* At the top of the sign up form there is also a link for sign in if the user has ended up in the page by mistake, this helps the user to go to the login page directly without leaving the page.
+
+![Sign up page](/static/readmefiles/signuppage.PNG)
 
 
 
