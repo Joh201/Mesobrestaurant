@@ -56,6 +56,7 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 * The user signs up by providing username, email(optional) and password.
 * The username and password fields are required for the user to sign up.
 * The user is also required to fill the password twice, and if it does not match the user gets appropriate information.
+* If a user tries to register with the same username, the user gets an appropriate message that the user already exists.
 * At the top of the sign up form there is also a link for sign in if the user has ended up in the page by mistake, this helps the user to go to the login page directly without leaving the page.
 * The sign up form contains a sign up button which the user uses to submit the form
 
@@ -159,6 +160,42 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 </p>
 
 ![Database](/static/readmefiles/database.PNG)
+
+## Testing
+
+* I have manually tested the following:
+* The website works on different browsers: Chrome, Microsoft Edge, Firefox.
+* The website is responsive and works on the standard screen sizes of the devtools device toolbar.
+* The above mentioned features work as expected.
+* I have also tested on gitpod and Code Institute's Heroku Terminal.
+
+
+## Validator Testing
+
+### HTML
+  <ul>
+  <li> A warning and minor errors were detected when passing through the official (W3C) validator.</li>
+  </ul>
+</li>
+
+   [Home page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmesob21.herokuapp.com%2F)
+
+   [Register page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmesob21.herokuapp.com%2Faccounts%2Fsignup%2F)
+
+   [Login page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmesob21.herokuapp.com%2Faccounts%2Flogin%2F)
+
+  <li>CSS
+   <ul>
+   <li> No error was detected when passing through the official (Jigsaw) validator. </li>
+   </ul>
+
+   <li> Python code
+  <ul>
+  <li> No error was detected when passing through the official (PEP8) validator.</li>
+  </ul>
+</li>
+</ul>
+
 
 
 
