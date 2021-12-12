@@ -8,6 +8,28 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 
 ![weblook of the site](/static/readmefiles/websitelook.PNG)
 
+## User stories
+
+![User stories](/static/readmefiles/userstories.PNG)
+
+## Wire frame
+
+![Wire frame1](/static/wireframe/wireframe1.png)
+
+![Wire frame2](/static/wireframe/wireframe2.png)
+
+![Wire frame3](/static/wireframe/wireframe3.png)
+
+![Wire frame4](/static/wireframe/wireframe4.png)
+
+![Wire frame5](/static/wireframe/wireframe5.png)
+
+![Wire frame6](/static/wireframe/wireframe6.png)
+
+![Wire frame7](/static/wireframe/wireframe7.png)
+
+![Wire frame8](/static/wireframe/wireframe8.png)
+
 
 # Existing Features
 
@@ -48,6 +70,7 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 * If the user makes a mistake while signing in, the user gets a feed back that the username or password is incorrect.
 * At the top of the sign in form there is also a link for sign up page if the user has ended up in the page by mistake, upon clicking the link the user gets redirected to the register page.
 * At the bottom of the sign in form there is a sign in button which enables the user to login.
+* When users login, they get a feed back that they have sucessfully logged in.
 
 ![Login page](/static/readmefiles/signin.PNG)
 
@@ -72,7 +95,8 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 * In the booking page the user is required to fill in all the fileds of the bookig form.
 * If the user forgets to fill a field in the form the user is reminded to fill the field.
 * The user can not make a booking without filling all the required fields of the booking form.
-* The form allows the user to pick date and time from an interactive datetime picker calendar.
+* The form allows the user to pick date and time from an interactive datetime calendar.
+* If the user tries to book the same time as an existing booking, the user gets a feed back, which informs the user to book another time.
 * Once the customer has filled in the form, the customer can add bookings by clicking the add booking button in the form, and gets redirected to the booking list page.
 
 ![Booking form](/static/readmefiles/addbook.png)
@@ -94,7 +118,8 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 
 
 ### Logout page
-* when the user tries to logout, the user is asked to confirm the sign out inorder to avoid accidental logouts
+* when the user tries to logout, the user is asked to confirm the sign out inorder to avoid accidental logouts.
+* When users logout, they get a feed back that they have sucessfully logged out.
 
 ![Sign out](/static/readmefiles/signout.PNG)
 
