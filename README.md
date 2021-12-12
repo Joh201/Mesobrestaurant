@@ -172,7 +172,7 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 
 ## Validator Testing
 
-### HTML
+<li>HTML
   <ul>
   <li> A warning and minor errors were detected when passing through the official (W3C) validator.</li>
   </ul>
@@ -195,6 +195,51 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
   </ul>
 </li>
 </ul>
+
+## Bugs
+
+### Solved Bugs
+
+* During the development of the project I encountered a typo bug that was preventing me from creating the list display in the admin panel, and the problem was fixed when I corrected the typo.
+
+### Remaining Bugs
+* There are no remaining bugs.
+
+## Accessibility
+
+<ul>
+  <li> The acessibility was tested using lighthouse in the devtools and it shows that the colors and fonts used for the website are user friendly.</li>
+  </ul>
+
+
+  ### Home page accessibility
+
+![Home page accessibility](/static/readmefiles/home.PNG)
+
+### Register page accessibility
+
+![Register page accessibility](/static/readmefiles/homeaccin.PNG)
+
+### Login page accessibility
+
+![Login page accessibility](/static/readmefiles/homeaccre.PNG)
+
+### My bookings page accessibility
+
+![My bookings](/static/readmefiles/booklistac.PNG)
+
+### Booking page accessibility
+
+![Book](/static/readmefiles/bookingac.PNG)
+
+
+### Update page accessibility
+
+![Book](/static/readmefiles/updateac.PNG)
+
+
+
+
 
 
 
