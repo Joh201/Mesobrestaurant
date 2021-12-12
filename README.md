@@ -55,9 +55,16 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 ### Booking list age
 
 * When the user has registered or loged in, the user is directed to the booking list page
-* If the user has  previous bookings, the user can see a list of bookings on this page
 * If the user has no previous bookings, the user reads a message 'You have no bookings, Please create a booking' and the user can create a booking by clicking the booking button in the page
+* If the user has previous bookings, the user can see a list of bookings on this page
+* In this page the users can see the name, number of guests and date and time of booking their booking
 * The user can update or cancel the bookings by using the update and cancel buttons below each booking
+
+![No booking](/static/readmefiles/createbook.PNG)
+
+
+![My booking](/static/readmefiles/mybookings.PNG)
+
 
 
 
