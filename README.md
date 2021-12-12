@@ -101,6 +101,29 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 
 ## Site owner section
 
+### Registered users
+
+* The restaurant owner can see the list of registered customers in the admin panel of the website.
+* The owner of the site can delete registered users if it is needed.
+* The site owner can filter registered customers based on their status.
+
+![Users](/static/readmefiles/registeruser.PNG)
+
+
+### Bookings
+
+* The restaurant owner can see the list of bookings made by customers in the admin panel of the website.
+* The owner of the site can see a list display of the name, email, number of guests, and date and time of the customers bookings.
+* The site owner can filter bookings from customers based on their first name, and date and time of booking.
+* The site owner can search for bookings based on their first name or number of guests coming to the restaurant.
+
+![search](/static/readmefiles/search.PNG)
+
+* The owner of mesob restaurant can also delete bookings if it is necessary.
+
+![Books](/static/readmefiles/booklist.PNG)
+
+
 
 
 
