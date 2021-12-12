@@ -54,11 +54,11 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 
 ### Booking list age
 
-* When the user has registered or loged in, the user is directed to the booking list page
-* If the user has no previous bookings, the user reads a message 'You have no bookings, Please create a booking' and the user can create a booking by clicking the booking button in the page
-* If the user has previous bookings, the user can see a list of bookings on this page
-* In this page the users can see the name, number of guests and date and time of booking their booking
-* The user can update or cancel the bookings by using the update and cancel buttons below each booking
+* When the user has registered or loged in, the user is directed to the booking list page.
+* If the user has no previous bookings, the user reads a message 'You have no bookings, Please create a booking' and the user can create a booking by clicking the booking button in the page.
+* If the user has previous bookings, the user can see a list of bookings on this page.
+* In this page the users can see the name, number of guests, and date and time of their booking.
+* The user can update or cancel the bookings by using the update and cancel buttons below each booking.
 
 ![No booking](/static/readmefiles/createbook.PNG)
 
@@ -66,6 +66,25 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 ![My booking](/static/readmefiles/mybookings.PNG)
 
 
+### Booking age
+
+* When the user has clicked the book button on the booking list page, the user is directed to the booking page.
+* In the booking page the user is required to fill in all the fileds of the bookig form.
+* If the user forgets to fill a field in the form the user is reminded to fill the field.
+* The user can not make a booking without filling all the required fields of the booking form.
+* Once the customer has filled in the form, the customer can add bookings by clicking the add booking button in the form, and gets redirected to the booking list page.
+
+![Booking form](/static/readmefiles/book.PNG)
+
+
+### Update booking page
+
+* When the user has clicked the update button on the booking list page, the user is directed to this page.
+* In the update booking page the customers can update their bookings.
+* The user can not leave any of the update booking form fileds empty, and the user will be reminded of this if they forget to fill all the fields in the form
+* Once the customer has changed the booking details, the customer can update bookings by clicking the Update booking button in the page, and gets redirected to the booking list page, where they can see their updated booking.
+
+![Update booking](/static/readmefiles/update.PNG)
 
 
 
