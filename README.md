@@ -6,10 +6,12 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 
 [Here is the live version of my project](https://mesob21.herokuapp.com/)
 
-![weblook of the site](#)
+![weblook of the site](/static/readmefiles/websitelook.PNG)
 
 
-## Existing Features
+# Existing Features
+
+## User section
 
 ### Home page
 
@@ -48,6 +50,15 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 * At the bottom of the sign in form there is a sign in button which enables the user to login.
 
 ![Login page](/static/readmefiles/signin.PNG)
+
+
+### Booking list age
+
+* When the user has registered or loged in, the user is directed to the booking list page
+* If the user has  previous bookings, the user can see a list of bookings on this page
+* If the user has no previous bookings, the user reads a message 'You have no bookings, Please create a booking' and the user can create a booking by clicking the booking button in the page
+* The user can update or cancel the bookings by using the update and cancel buttons below each booking
+
 
 
 
