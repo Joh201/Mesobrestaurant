@@ -149,6 +149,20 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 ![Books](/static/readmefiles/booklist.PNG)
 
 
+## Future Features
+* When time allows I would like to include Menu
+* Multiple table occupancies
+
+## Database Model
+
+<p> The database model includes the username, first name, last name, email, number of guests, and date and time of arrival. The username allows the site owner to identify the registered customers. Since, the username is a foreign key, it helps the owner to delete multiple bookings by one customer with one click. The database also uses this field to display and manage the bookings of a loged in user. First and last name fields provide information about the customers. The email field can be used by the restaurant owner to communicate with customers, for example, to provide offers or to notify customers about changes. The number of guests, and date and time of arrival allows the owner to make necessary plans to accommodate guests.
+</p>
+
+![Database](/static/readmefiles/database.PNG)
+
+
+
+
 
 
 
