@@ -87,5 +87,13 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 
 ![Update booking](/static/readmefiles/update.PNG)
 
+### Canceling a booking
+* While the user is in the booking list page, the user can easily cancel a booking by clicking the cancel button under each booking.
+
+![Cancel booking](/static/readmefiles/cancel.PNG)
+
+
+
+
 
 
