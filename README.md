@@ -72,9 +72,10 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 * In the booking page the user is required to fill in all the fileds of the bookig form.
 * If the user forgets to fill a field in the form the user is reminded to fill the field.
 * The user can not make a booking without filling all the required fields of the booking form.
+* The form allows the user to pick date and time from an interactive datetime picker calendar.
 * Once the customer has filled in the form, the customer can add bookings by clicking the add booking button in the form, and gets redirected to the booking list page.
 
-![Booking form](/static/readmefiles/book.PNG)
+![Booking form](/static/readmefiles/addbook.png)
 
 
 ### Update booking page
