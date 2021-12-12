@@ -66,7 +66,7 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 ![My booking](/static/readmefiles/mybookings.PNG)
 
 
-### Booking age
+### Booking page
 
 * When the user has clicked the book button on the booking list page, the user is directed to the booking page.
 * In the booking page the user is required to fill in all the fileds of the bookig form.
@@ -91,6 +91,15 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 * While the user is in the booking list page, the user can easily cancel a booking by clicking the cancel button under each booking.
 
 ![Cancel booking](/static/readmefiles/cancel.PNG)
+
+
+### Logout page
+* when the user tries to logout, the user is asked to confirm the sign out inorder to avoid accidental logouts
+
+![Sign out](/static/readmefiles/signout.PNG)
+
+
+## Site owner section
 
 
 
