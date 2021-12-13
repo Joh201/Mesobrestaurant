@@ -1,12 +1,12 @@
 # Mesob Restaurant
 
 <p>
-Mesob restaurant is a nice restaurant located in Uppsala city which is known for being the center of education in Sweden. The city is home to Uppsala University where Prof.Carl Linneaus worked. He is renowed for his system of classifying and naming nature. The owner of Mesob restaurant wants to serve customers with delicious food from an east african country called Eritrea. Thus, the website was developed to enable Mesob restaurant owner to take bookings from customers, and to allow customers to book time at the restaurant so that they can dine there. It runs on Code Institute's mock terminal on Heroku.
+Mesob restaurant is a nice restaurant located in Uppsala city which is known for being the center of education in Sweden. The city is home to Uppsala University where Prof.Carl Linneaus worked. He is renowed for his system of classifying and naming nature. The owner of Mesob restaurant wants to serve customers a delicious food from an east african country called Eritrea. Thus, the website was developed to enable Mesob restaurant owner to take bookings from customers, and to allow customers to book time at the restaurant so that they can dine there. It runs on Code Institute's mock terminal on Heroku.
 </p>
 
 [Here is the live version of my project](https://mesob21.herokuapp.com/)
 
-![weblook of the site](/static/readmefiles/websitelook.PNG)
+![weblook of the site](/static/readmefiles/weblook.PNG)
 
 ## User stories
 
@@ -57,8 +57,8 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 * The username and password fields are required for the user to sign up.
 * The user is also required to fill the password twice, and if it does not match the user gets appropriate information.
 * If a user tries to register with the same username, the user gets an appropriate message that the user already exists.
-* At the top of the sign up form there is also a link for sign in if the user has ended up in the page by mistake, this helps the user to go to the login page directly without leaving the page.
-* The sign up form contains a sign up button which the user uses to submit the form
+* At the top of the sign up form there is a link for sign in if the user has ended up in the page by mistake, this helps the user to go to the login page directly.
+* The sign up form contains a sign up button which the user uses to submit the form.
 
 ![Sign up page](/static/readmefiles/signuppage.PNG)
 
@@ -92,7 +92,7 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 
 ### Booking page
 
-* When the user has clicked the book button on the booking list page, the user is directed to the booking page.
+* When the user has clicked the book button in the booking list page, the user is directed to the booking page.
 * In the booking page the user is required to fill in all the fileds of the bookig form.
 * If the user forgets to fill a field in the form the user is reminded to fill the field.
 * The user can not make a booking without filling all the required fields of the booking form.
@@ -156,7 +156,7 @@ Mesob restaurant is a nice restaurant located in Uppsala city which is known for
 
 ## Database Model
 
-<p> The database model includes the username, first name, last name, email, number of guests, and date and time of arrival. The username allows the site owner to identify the registered customers. Since, the username is a foreign key, it helps the owner to delete multiple bookings by one customer with one click. The database also uses this field to display and manage the bookings of a loged in user. First and last name fields provide information about the customers. The email field can be used by the restaurant owner to communicate with customers, for example, to provide offers or to notify customers about changes. The number of guests, and date and time of arrival allows the owner to make necessary plans to accommodate guests.
+<p> The database model includes the username, first name, last name, email, number of guests, and date and time of arrival. The username allows the site owner to identify the registered customers. Since, the username is a foreign key, it helps the owner to delete multiple bookings by one customer with one click. The view logic also uses this field to identify the user in the database, and to display and manage the bookings of a loged in user. First and last name fields provide information about the customers. The email field can be used by the restaurant owner to communicate with customers, for example, to provide offers or to notify customers about changes. The number of guests, and date and time of arrival allows the owner to make necessary plans to accommodate guests. The date and time fields are also used to avoid same time booking by customers.
 </p>
 
 ![Database](/static/readmefiles/database.PNG)
